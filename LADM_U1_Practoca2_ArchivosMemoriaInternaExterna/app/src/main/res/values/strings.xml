@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LADM_U1_Practoca2_ArchivosMemoriaInternaExterna</string>
+    <array name="memoria">
+        <item>Memoria Interna</item>
+        <item>Memoria Externa</item>
+    </array>
+</resources>

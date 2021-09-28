@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#b9e2e6"
+    android:padding="20dp"
+    tools:context=".MainActivity2">
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:ems="32"
+        android:gravity="top"
+        android:hint="Titulo" />
+
+    <EditText
+        android:id="@+id/contenido"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:ems="128"
+        android:gravity="top"
+        android:hint="Escribe tu recordatorio" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:id="@+id/spiner"
+        android:entries="@array/memoria"/>
+
+    <Button
+        android:id="@+id/botonguardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar NOTA"/>
+
+    <Button
+        android:id="@+id/botonregresar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Regresar" />
+
+</LinearLayout>

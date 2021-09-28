@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#b9e2e6"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <!-- Encabezado -->
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Notes"
+            android:textSize="36dp"
+            android:textColor="@color/black"
+            android:layout_gravity="left|center_vertical"
+
+            />
+
+        <ImageButton
+            android:background="@drawable/buscar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/botonBuscar"
+            />
+    </GridLayout>
+
+    <!-- Nota principal -->
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/texto_redondo"
+        android:textColor="@color/black"
+        android:id="@+id/nota1"
+        android:text="Notas\nAdamari Cortes\nDaniel Ayala"
+        android:padding="10dp"
+        />
+
+    <!-- Notas secundarias -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp">
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/texto_redondo"
+            android:textColor="@color/black"
+            android:layout_gravity="left"
+            android:padding="10dp"
+            android:text="Nota2\nBienvenido a la aplicacion de notas"
+            android:id="@+id/nota2"
+            />
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/texto_redondo"
+            android:textColor="@color/black"
+            android:layout_gravity="right"
+            android:padding="10dp"
+            android:text="Nota2\nPodras abrir archivo y borrarlos"
+            android:id="@+id/nota3"
+            />
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="20dp">
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/abrir"
+            android:id="@+id/botonabrir"
+            />
+
+        <ImageButton
+            android:background="@drawable/borrar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="right"
+            android:id="@+id/botoneliminar"
+            />
+    </GridLayout>
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="+"
+        android:textSize="32dp"
+        android:textAlignment="center"
+        android:background="@drawable/boton_redondo"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/botonmas"
+        />
+
+</LinearLayout>
